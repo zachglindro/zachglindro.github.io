@@ -21,12 +21,12 @@ export class AppHeader extends HTMLElement {
           </nav>
 
           <div class="flex items-center gap-3">
-            <button data-action="contact" class="btn-brutal bg-brand-emerald text-brand-dark font-extrabold px-5 py-2.5 rounded-xl border-3 border-brand-dark shadow-brutal text-sm flex items-center gap-2">
+            <a href="mailto:zachglindro.dev@gmail.com?subject=Hello%20Zach" class="btn-brutal bg-brand-emerald text-brand-dark font-extrabold px-5 py-2.5 rounded-xl border-3 border-brand-dark shadow-brutal text-sm flex items-center gap-2">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
               </svg>
               Contact Me
-            </button>
+            </a>
             <button data-action="menu" class="md:hidden p-2 rounded-lg border-2 border-brand-dark bg-gray-100">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -36,13 +36,6 @@ export class AppHeader extends HTMLElement {
         </div>
       </header>
     `;
-
-    this.querySelector('[data-action="contact"]').addEventListener(
-      "click",
-      () => {
-        window.dispatchEvent(new CustomEvent("toggle-contact-drawer"));
-      },
-    );
 
     this.querySelector('[data-action="menu"]').addEventListener("click", () => {
       window.dispatchEvent(new CustomEvent("toggle-mobile-nav"));

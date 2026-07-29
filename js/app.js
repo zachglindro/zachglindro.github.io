@@ -6,7 +6,6 @@ import { ProjectCatalog } from "./components/ProjectCatalog.js";
 import { ExperienceEducation } from "./components/ExperienceEducation.js";
 import { SkillsInterests } from "./components/SkillsInterests.js";
 import { AppFooter } from "./components/AppFooter.js";
-import { ContactDrawer } from "./components/ContactDrawer.js";
 import { ProjectCard } from "./components/ProjectCard.js";
 
 customElements.define("app-header", AppHeader);
@@ -17,5 +16,4 @@ customElements.define("project-catalog", ProjectCatalog);
 customElements.define("experience-education", ExperienceEducation);
 customElements.define("skills-interests", SkillsInterests);
 customElements.define("app-footer", AppFooter);
-customElements.define("contact-drawer", ContactDrawer);
 customElements.define("project-card", ProjectCard);

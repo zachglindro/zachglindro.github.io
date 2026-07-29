@@ -12,9 +12,9 @@ export class MobileNav extends HTMLElement {
           <a href="#projects" data-close="true" class="hover:text-brand-mint">All Projects</a>
           <a href="#experience" data-close="true" class="hover:text-brand-mint">Experience &amp; Edu</a>
           <a href="#skills" data-close="true" class="hover:text-brand-mint">Skills &amp; Interests</a>
-          <button data-action="contact" class="mt-4 bg-brand-amber text-brand-dark px-6 py-3 rounded-xl border-3 border-white font-extrabold shadow-brutal-white">
+          <a href="mailto:zachglindro.dev@gmail.com?subject=Hello%20Zach" data-close="true" class="mt-4 inline-flex items-center justify-center bg-brand-amber text-brand-dark px-6 py-3 rounded-xl border-3 border-white font-extrabold shadow-brutal-white">
             Contact Me
-          </button>
+          </a>
         </div>
       </div>
     `;
@@ -26,14 +26,6 @@ export class MobileNav extends HTMLElement {
     this.querySelector('[data-action="close"]').addEventListener("click", () =>
       this.hide(),
     );
-    this.querySelector('[data-action="contact"]').addEventListener(
-      "click",
-      () => {
-        this.hide();
-        window.dispatchEvent(new CustomEvent("toggle-contact-drawer"));
-      },
-    );
-
     this.querySelectorAll('[data-close="true"]').forEach((link) => {
       link.addEventListener("click", () => this.hide());
     });
