@@ -12,6 +12,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
+        darkMode: "class",
         theme: {
           extend: {
             colors: {
@@ -37,6 +38,22 @@
       };
     </script>
 
+    <script>
+      (() => {
+        try {
+          const savedTheme = localStorage.getItem("theme");
+          const prefersDark = window.matchMedia(
+            "(prefers-color-scheme: dark)",
+          ).matches;
+          const isDark = savedTheme ? savedTheme === "dark" : prefersDark;
+
+          document.documentElement.classList.toggle("dark", isDark);
+        } catch (error) {
+          document.documentElement.classList.remove("dark");
+        }
+      })();
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link
@@ -47,7 +64,7 @@
   </head>
 
   <body
-    class="bg-brand-cream text-brand-dark antialiased selection:bg-brand-emerald selection:text-white"
+    class="bg-brand-cream text-brand-dark antialiased selection:bg-brand-emerald selection:text-white dark:bg-brand-dark dark:text-brand-cream"
   >
     <div
       class="h-3 bg-gradient-to-r from-brand-emerald via-brand-amber to-emerald-400 w-full fixed top-0 z-50"

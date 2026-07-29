@@ -20,9 +20,17 @@ pre,
   box-shadow: 6px 6px 0px 0px #0f172a;
 }
 
+.dark .btn-brutal:hover {
+  box-shadow: 6px 6px 0px 0px #f8fafc;
+}
+
 .btn-brutal:active {
   transform: translate(2px, 2px);
   box-shadow: 2px 2px 0px 0px #0f172a;
+}
+
+.dark .btn-brutal:active {
+  box-shadow: 2px 2px 0px 0px #34d399;
 }
 
 .card-brutal {
@@ -36,6 +44,10 @@ pre,
   box-shadow: 8px 8px 0px 0px #0f172a;
 }
 
+.dark .card-brutal:hover {
+  box-shadow: 8px 8px 0px 0px #f8fafc;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -44,7 +56,15 @@ pre,
   background: #f8fafc;
 }
 
+.dark ::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
 ::-webkit-scrollbar-thumb {
   background: #0f172a;
   border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #34d399;
 }
