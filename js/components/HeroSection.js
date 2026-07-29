@@ -49,8 +49,8 @@ export class HeroSection extends HTMLElement {
             </div>
           </div>
 
-          <div class="lg:col-span-5">
-            <div class="bg-white rounded-2xl border-4 border-brand-dark p-6 shadow-brutal-emerald relative overflow-hidden">
+          <div class="lg:col-span-5 order-first lg:order-last">
+            <div class="bg-white rounded-2xl border-4 border-brand-dark p-5 sm:p-6 shadow-brutal-emerald relative overflow-hidden">
               <div class="flex items-center justify-between border-b-3 border-brand-dark pb-4 mb-5">
                 <div class="flex items-center gap-2">
                   <span class="w-3.5 h-3.5 rounded-full bg-red-400 border border-brand-dark"></span>
@@ -60,11 +60,21 @@ export class HeroSection extends HTMLElement {
                 <span class="text-xs font-mono font-bold text-slate-500">zachglindro.dev ~ profile</span>
               </div>
 
-              <div class="space-y-4">
-                <div class="flex items-center gap-4">
-                  <div class="w-16 h-16 rounded-xl bg-brand-emerald border-2 border-brand-dark flex items-center justify-center text-white font-extrabold text-2xl shadow-brutal">👨‍💻</div>
-                  <div>
-                    <h3 class="font-extrabold text-xl text-brand-dark">Zach Dwayne Glindro</h3>
+              <div class="space-y-4 sm:space-y-5">
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-5">
+                  <div class="w-full max-w-[18rem] sm:max-w-[12rem] mx-auto sm:mx-0 shrink-0">
+                    <div class="aspect-[2/3] rounded-2xl overflow-hidden border-2 border-brand-dark shadow-brutal bg-slate-100">
+                      <img
+                        src="images/profile.jpg"
+                        alt="Portrait of Zach Dwayne Glindro"
+                        class="h-full w-full object-cover object-top"
+                        loading="eager"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="text-center sm:text-left space-y-1">
+                    <h3 class="font-extrabold text-xl sm:text-2xl text-brand-dark leading-tight">Zach Dwayne Glindro</h3>
                     <p class="text-xs font-mono text-brand-emerald font-bold">zachglindro.dev@gmail.com</p>
                     <p class="text-xs text-slate-500">Calamba / Los Baños, Laguna</p>
                   </div>
