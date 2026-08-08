@@ -80,7 +80,7 @@ export class HeroSection extends HTMLElement {
                   <div class="text-emerald-400">// Primary Stack Highlight</div>
                   <div><span class="text-amber-400">const</span> developer = {</div>
                   <div class="pl-4"><span class="text-sky-300">core</span>: [<span class="text-green-300">"Next.js"</span>, <span class="text-green-300">"FastAPI"</span>, <span class="text-green-300">"TypeScript"</span>, <span class="text-green-300">"Python"</span>],</div>
-                  <div class="pl-4"><span class="text-sky-300">ai_rag</span>: [<span class="text-green-300">"ChromaDB"</span>, <span class="text-green-300">"BM25 Search"</span>, <span class="text-green-300">"Cross-Encoders"</span>],</div>
+                  <div class="pl-4"><span class="text-sky-300">ai_rag</span>: [<span class="text-green-300">"ChromaDB"</span>, <span class="text-green-300">"BM25 Search"</span>],</div>
                   <div class="pl-4"><span class="text-sky-300">cloud_db</span>: [<span class="text-green-300">"Firebase"</span>, <span class="text-green-300">"SQLite"</span>, <span class="text-green-300">"Docker"</span>],</div>
                   <div class="pl-4"><span class="text-sky-300">status</span>: <span class="text-amber-300">"Graduated UPLB Magna Cum Laude 2026"</span></div>
                   <div>};</div>
