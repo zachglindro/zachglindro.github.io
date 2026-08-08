@@ -5,8 +5,9 @@ export class HeroSection extends HTMLElement {
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div class="lg:col-span-7 space-y-6">
             <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-none text-brand-dark dark:text-brand-cream">
-              Building intelligent
-              <span class="text-brand-emerald underline decoration-brand-amber decoration-wavy decoration-2">search</span>, full-stack &amp; agritech.
+              Building
+              <span class="text-brand-emerald underline decoration-brand-amber decoration-wavy decoration-2">intelligent</span>
+              full-stack applications.
             </h1>
 
             <p class="text-lg sm:text-xl font-medium text-slate-700 dark:text-slate-300 max-w-2xl leading-relaxed">
