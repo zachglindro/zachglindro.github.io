@@ -4,11 +4,6 @@ export class HeroSection extends HTMLElement {
       <section id="top" class="pt-36 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div class="lg:col-span-7 space-y-6">
-            <div class="inline-flex items-center gap-2 px-4 py-2 bg-brand-amber/20 border-2 border-brand-dark dark:border-brand-cream rounded-full font-extrabold text-sm text-brand-dark dark:text-brand-cream shadow-sm">
-              <span class="w-3 h-3 rounded-full bg-brand-amber animate-pulse"></span>
-              BS Computer Science @ UPLB • Magna Cum Laude (GPA 1.44)
-            </div>
-
             <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-none text-brand-dark dark:text-brand-cream">
               Building intelligent
               <span class="text-brand-emerald underline decoration-brand-amber decoration-wavy decoration-2">search</span>, full-stack &amp; agritech.
